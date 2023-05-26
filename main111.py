@@ -54,7 +54,7 @@ def launchBrowser():
             error_message = False
 
 
-        driver.get('https://support.demeu.com/')
+    driver.get('https://support.demeu.com/') #сам сайт плохо проработан и в него с первого раза не зайти, поэтому повторяем вход
 
 
     try:
@@ -96,7 +96,7 @@ def launchBrowser():
         requestType.click()
 
         workMinutes = driver.find_element(By.NAME,'workMinutes')
-        #4
+   
         workMinutes.send_keys(Keys.ARROW_RIGHT + Keys.BACKSPACE)
         workMinutes.send_keys('10', Keys.TAB)
 
